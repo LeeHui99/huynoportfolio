@@ -14,94 +14,123 @@
     </head>
 
     <body>
-        <header>
+        <header class="navbar navbar-expand-md fixed-top navbar-light bg-light">
             <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-6">
-                        <a href="#"><img src="images/logo.png" alt="logo"/></a>
-                    </div>
+                <a class="nav-brand" href="/"><img src="images/logo.png" alt="logo"/></a>
 
-                    <nav class="col-6 text-end">
-                        <ul class="row align-items-center">
-                            <li class="active col"><span>Home</span></li>
-                            <li class="col"><span>Service</span></li>
-                            <li class="col"><span>Products</span></li>
-                            <li class="col">
-                                <a class="contact-button">
-                                    Contact <img src="images/smile.png"/>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav">
+                        <li class="nav-item pe-md-3">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item px-md-3">
+                            <a class="nav-link" href="services.html">Service</a>
+                        </li>
+                        <li class="nav-item px-md-3">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item ps-md-3">
+                            <a class="nav-item btn btn-primary contact-button" href="contact.html">
+                                Contact <img src="images/smile.png"/>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
             </div>
         </header>
 
-        <main>
-            <section class="container py-5 intro">
-                <h2>Huy Le Khanh Hoang</h2>
-                <h1>Graphic Designer</h1>
+        <main role="main" class="container">
+            <section class="py-5 intro">
+                <h2 class="display-1">Huy Le Khanh Hoang</h2>
+                <h1 class="display-2">Graphic Designer</h1>
                 <p class="subtitle">(Ho Chi Minh City, Vietnam)</p>
             </section>
 
-            <section class="container hero">
+            <section class="hero">
                 <div class="hero-bg"></div>
                 <img src="images/avatar.png" alt="avatar" class="avatar"/>
             </section>
 
-            <section class="container">
-                <div class="row quote py-5">
-                    <div class="col-7 quote-copy">
+            <section>
+                <div class="row quote py-5 gy-3 gy-lg-0">
+                    <div class="col-12 col-md-7 quote-copy">
                         <strong>
                             Guided by a philosophy of minimalist, I strive to create works that embody simplicity without sacrificing depth.
                             <span>Every detail is thought.</span>
                         </strong>
                     </div>
 
-                    <div class="col-5 position-relative">
+                    <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
                         <p class="subtitle">(Get in touch)</p>
 
-                        <div class="row gx-3 position-absolute bottom-0">
-                            <a class="col" href="https://www.facebook.com/hoanghuylekhanh" target="_blank"><div class="icon-wrapper"><i class="bi bi-facebook"></i></div></a>
-                            <a class="col" href="https://www.instagram.com/noledegeneres" target="_blank"><div class="icon-wrapper"><i class="bi bi-instagram"></i></div></a>
-                            <a class="col" href="https://www.behance.net/huylkhnhhong" target="_blank"><div class="icon-wrapper"><i class="bi bi-behance"></i></div></a>
+                        <div class="gx-3 w-20 mt-3">
+                            <a href="https://www.facebook.com/hoanghuylekhanh" target="_blank"><div class="icon-wrapper"><i class="bi bi-facebook"></i></div></a>
+                            <a class="mx-3" href="https://www.instagram.com/noledegeneres" target="_blank"><div class="icon-wrapper"><i class="bi bi-instagram"></i></div></a>
+                            <a href="https://www.behance.net/huylkhnhhong" target="_blank"><div class="icon-wrapper"><i class="bi bi-behance"></i></div></a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="container">
-                <div class="row services py-5">
-                    <div class="col-5 position-relative">
+            <section>
+                <div class="row services py-5 gx-0 gy-4 gy-md-0 align-items-center">
+                    <div class="col-12 col-md-5">
                         <p class="subtitle">(What I can do)</p>
-                        <div class="row position-absolute bottom-0 gx-3">
-                            <div class="col">
-                                <img src="images/illustrator.png"/>
+
+                        <div class="mt-4">
+                            <div class="row align-items-center pb-3 gy-2 gy-xl-0">
+                                <img class="col-2" src="images/illustrator.png"/>
+                                <div class="col-10">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col">
-                                <img src="images/photoshop.png"/>
+                            <div class="row align-items-center pb-3 gy-2 gy-xl-0">
+                                <img class="col-2" src="images/photoshop.png"/>
+                                <div class="col-10">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col">
-                                <img src="images/indesign.png"/>
+                            <div class="row align-items-center pb-3 gy-2 gy-xl-0">
+                                <img class="col-2" src="images/indesign.png"/>
+                                <div class="col-10">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col">
-                                <img src="images/adobe-audition.png"/>
+                            <div class="row align-items-center pb-3 gy-2 gy-xl-0">
+                                <img class="col-2" src="images/adobe-audition.png"/>
+                                <div class="col-10">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col">
-                                <img src="images/premiere.png"/>
-                            </div>
 
-                            <div class="col">
-                                <img src="images/capcut.png"/>
+                            <div class="row align-items-center gy-2 gy-xl-0">
+                                <img class="col-2" src="images/capcut.png"/>
+                                <div class="col-10">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-7 service-list">
+                    <div class="col-12 col-md-7 service-list">
                         <div>
                             <h3>BRANDING DESIGN</h3>
                             <p>Creating clear, impactful visuals with minimalist composition, color, and typography to communicate effectively.</p>
@@ -121,10 +150,10 @@
                 </div>
             </section>
 
-            <section class="container">
-                <div class="row products py-5 gy-4">
-                    <h3 class="text-center">My product</h3>
+            <section class="products py-5">
+                <h3 class="text-center pb-3 highlight-text h2">My products</h3>
 
+                <div class="row gy-5">
                     <div>
                         <h4 class="text-center">Branding Design</h4>
                         <div class="row">
@@ -140,20 +169,20 @@
 
                     <div>
                         <h4 class="text-center">Graphic design</h4>
-                        <div class="row">
-                            <div class="col-3 text-right">
+                        <div class="row gy-4 gy-lg-0">
+                            <div class="col-6 col-md-3 text-right">
                                 <img src="images/chicken.png" alt="chicken"/>
                             </div>
 
-                            <div class="col-3 text-right">
+                            <div class="col-6 col-md-3 text-right">
                                 <img src="images/pig.png" alt="pig"/>
                             </div>
 
-                            <div class="col-3">
+                            <div class="col-6 col-md-3">
                                 <img src="images/dog.png" alt="dog"/>
                             </div>
 
-                            <div class="col-3">
+                            <div class="col-6 col-md-3">
                                 <img src="images/old-lady.png" alt="lady"/>
                             </div>
                         </div>
@@ -162,28 +191,30 @@
                     <div>
                         <h4 class="text-center">Digital illustration</h4>
 
-                        <div class="row digital px-2">
-                            <div class="col-6 text-end">
+                        <div class="row digital px-2 justify-content-center">
+                            <div class="col-12 col-lg-7 text-center text-lg-end">
                                 <img src="images/dota.png" alt="dota"/>
                             </div>
 
-                            <div class="col-6">
+                            <div class="col-12 col-lg-5 pt-4 pt-lg-0 text-center text-lg-start">
                                 <img src="images/red.png" alt="red"/>
                             </div>
                         </div>
                     </div>
 
                     <div class="text-center">
-                        <button>View more <i class="bi bi-arrow-down-right"></i></button>
+                        <a class="nav-item text-uppercase btn-lg btn btn-primary contact-button" href="products.html">
+                            View more <i class="bi bi-arrow-down-right"></i>
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <section class="container py-5">
+            <section class="py-5">
                 <div class="wrapper p-5">
                     <div>
-                        <h3>Like what you see?</h3>
-                        <h4>Contact me</h4>
+                        <strong class="display-5">Like what you see?</strong>
+                        <h4 class="display-6">Contact me</h4>
                         <img src="images/zalo-qr.png" class="qr-code" alt="qr"/>
                     </div>
                 </div>
@@ -193,7 +224,7 @@
         <footer>
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 order-2 order-md-1 col-md-6">
                         <img src="images/white-logo.png"/>
                         <ul>
                             <li>
@@ -209,8 +240,9 @@
                                 huylkhnhhong
                             </li>
                         </ul>
+                        <strong class="mt-5 d-block">© Made by Huy Le</strong>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 pb-4 pb-md-0 order-1 order-md-2 col-md-6">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2442051279254!2d106.64250751005463!3d10.79259915885196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175294cc96a5335%3A0x602b3d8d4d714eaa!2zMTAyIELDoHUgQ8OhdCAyLCBQaMaw4budbmcgMTIsIFTDom4gQsOsbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1731654124093!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
