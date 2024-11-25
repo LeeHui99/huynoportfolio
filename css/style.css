@@ -82,7 +82,7 @@ main {
     height: 60vh;
 
     .hero-bg {
-        background-image: url('/images/hero.png');
+        background-image: url('../images/hero.png');
         background-size: cover;
         height: 100%;
         background-position: 10% center;
@@ -233,7 +233,7 @@ main {
     background-color: #0056ff;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    background-image: url('/images/cat-hand.png');
+    background-image: url('../images/cat-hand.png');
     background-size: cover;
     background-position: center;
     text-align: left;
@@ -308,19 +308,3 @@ footer {
         text-align: center;
     }
  }
-
- #myBtn {
-    position: fixed;
-    bottom: 10px;
-    float: right;
-    right: 18.5%;
-    left: 77.25%;
-    max-width: 30px;
-    width: 100%;
-    font-size: 12px;
-    border-color: rgba(85, 85, 85, 0.2);
-    background-color: rgb(100,100,100);
-    padding: .5px;
-    border-radius: 4px;
-
-}
