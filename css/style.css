@@ -28,6 +28,14 @@ body {
     color: #fff;
 }
 
+.display-5 {
+    font-size: 3rem;
+}
+
+.display-6 {
+    font-size: 2.5rem;
+}
+
 /* Header */
 header {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -46,6 +54,7 @@ header {
 
 .contact-button {
     cursor: pointer;
+    display: inline-block;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     background-color: var(--primary);
     color: #fff;
@@ -59,6 +68,8 @@ header {
 
 .contact-button:hover {
     text-decoration: underline;
+    animation: gelatin 2s ease infinite;
+    backface-visibility: visible !important;
 }
 
 
@@ -95,6 +106,7 @@ main {
         bottom: 0;
         right: 12%;
         height: 70vh;
+        animation: shake 2s ease infinite;
     }
 }
 
@@ -135,6 +147,13 @@ main {
     }
 }
 
+
+.icon-wrapper:hover {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: hi-there 2s infinite;
+}
+
 .icon-white {
     background-color: #fff;
     color: #000;
@@ -154,13 +173,12 @@ main {
         object-fit: contain;
     }
 
-    > div:first-child {
+    .tools {
         border-right: 1px solid var(--divider-color);
     }
 }
 
 .service-list {
-
     div {
        padding: 16px;
     }
@@ -221,8 +239,7 @@ main {
 
 .digital {
     img {
-        height: 500px;
-        width: auto;
+        max-height: 600px;
     }
 }
 
@@ -280,20 +297,16 @@ footer {
 }
 
 @media (max-width: 767.98px) {
-    .services {
-        > div:first-child {
-            border: none;
-        }
+    .services .tools {
+        border: none;
+    }
+
+    .services .service-list {
+        padding: 0;
     }
 
     .quote .quote-copy {
        border: none;
-    }
-
-    .digital {
-        img {
-            height: 350px;
-        }
     }
  }
 
@@ -308,3 +321,24 @@ footer {
         text-align: center;
     }
  }
+
+ @keyframes gelatin {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+}
+
+@keyframes hi-there {
+    30% { transform: scale(1.2); }
+    40%, 60% { transform: rotate(-20deg) scale(1.2); }
+    50% { transform: rotate(20deg) scale(1.2); }
+    70% { transform: rotate(0deg) scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0%, 20%, 100% {transform: translateX(0);}
+	30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	40%, 60%, 80% {transform: translateX(10px);}
+}

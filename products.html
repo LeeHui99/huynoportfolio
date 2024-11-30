@@ -6,12 +6,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="images/favicon.ico">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <title>Products - Huy Le's Porfolio</title>
+        <title>Contact - Huy Le's Porfolio</title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -19,26 +21,25 @@
             <div class="container">
                 <a class="nav-brand" href="."><img src="images/logo.png" alt="logo"/></a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav">
-                        <li class="nav-item pe-md-3">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                    <ul class="navbar-nav align-items-md-center">
+                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href=".">Home</a>
                         </li>
-                        <li class="nav-item px-md-3">
+                        <li class="nav-item pl-md-4">
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
-                        <li class="nav-item px-md-3">
+                        <li class="nav-item px-md-4">
                             <a class="nav-link active" href="products.html">Products</a>
                         </li>
-                        <li class="nav-item ps-md-3">
-                            <a class="nav-item btn btn-primary contact-button" href="contact.html">
+                        <li class="nav-item pl-2 py-2">
+                            <a class="btn btn-primary contact-button" href="contact.html">
                                 Contact <img src="images/smile.png"/>
                             </a>
                         </li>
-                    </ul>
                 </div>
             </div>
             </div>
@@ -48,8 +49,8 @@
             <section class="products py-5">
                 <h3 class="text-center pb-3 highlight-text h2">My products</h3>
 
-                <div class="row gy-5">
-                    <div>
+                <div class="row">
+                    <div class="container">
                         <h4 class="text-center">Branding Design</h4>
                         <div class="row">
                             <div class="col-3">
@@ -60,16 +61,30 @@
                                 <img src="images/cto-cover.png" alt="cto-poster"/>
                             </div>
                         </div>
+
+                        <div class="row mt-4 justify-content-center">
+                            <div class="col-6 col-md-3">
+                                <img src="images/renon-1.jpg" alt="renon1"/>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <img src="images/renon-2.jpg" alt="renon2"/>
+                            </div>
+
+                            <div class="col-6 mt-3 mt-md-0 col-md-3">
+                                <img src="images/renon-3.jpg" alt="renon3"/>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="container mt-5">
                         <h4 class="text-center">Graphic design</h4>
-                        <div class="row gy-4 gy-lg-0">
-                            <div class="col-6 col-md-3 text-right">
+                        <div class="row">
+                            <div class="col-6 col-md-3 text-right mb-4 mb-md-0">
                                 <img src="images/chicken.png" alt="chicken"/>
                             </div>
 
-                            <div class="col-6 col-md-3 text-right">
+                            <div class="col-6 col-md-3 text-right mb-4 mb-md-0">
                                 <img src="images/pig.png" alt="pig"/>
                             </div>
 
@@ -81,17 +96,31 @@
                                 <img src="images/old-lady.png" alt="lady"/>
                             </div>
                         </div>
+
+                        <div class="row mt-4 justify-content-center">
+                            <div class="col-6 col-md-3">
+                                <img src="images/graphic-1.jpg" alt="graphic-1"></img>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <img src="images/graphic-2.jpg" alt="graphic-1"></img>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="mt-5 w-100 container">
                         <h4 class="text-center">Digital illustration</h4>
 
                         <div class="row digital px-2 justify-content-center">
-                            <div class="col-12 col-lg-7 text-center text-lg-end">
+                            <div class="col-12 col-lg-5 ">
                                 <img src="images/dota.png" alt="dota"/>
                             </div>
 
-                            <div class="col-12 col-lg-5 pt-4 pt-lg-0 text-center text-lg-start">
+                            <div class="col-6 col-lg-4 pt-4 pt-lg-0">
+                                <img src="images/mascot.png" alt="graphic-1"></img>
+                            </div>
+
+                            <div class="col-6 col-lg-3 pt-4 pt-lg-0">
                                 <img src="images/red.png" alt="red"/>
                             </div>
                         </div>
