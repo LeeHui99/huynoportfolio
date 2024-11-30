@@ -106,7 +106,6 @@ main {
         bottom: 0;
         right: 12%;
         height: 70vh;
-        animation: shake 2s ease infinite;
     }
 }
 
@@ -335,10 +334,4 @@ footer {
     50% { transform: rotate(20deg) scale(1.2); }
     70% { transform: rotate(0deg) scale(1.2); }
     100% { transform: scale(1); }
-}
-
-@keyframes shake {
-    0%, 20%, 100% {transform: translateX(0);}
-	30%, 50%, 70%, 90% {transform: translateX(-10px);}
-	40%, 60%, 80% {transform: translateX(10px);}
 }
